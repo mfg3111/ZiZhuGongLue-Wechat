@@ -1,0 +1,199 @@
+*{padding:0;margin:0;list-style:none;}
+.page{width: 100%;height: 100%;
+	font-size:.2rem; }
+body,html{overflow-x:hidden;}
+
+/*自助攻略页面1*/
+
+
+/*--------------------------------------------------------*/
+/*第一页面*/
+.page1{width: 100%;height: 100%;background:url(../img/bg1.jpg) no-repeat; background-position:center;background-size:cover;position:fixed;top:0;left:0;z-index: 9;}
+
+/*1号图片*/
+.page1 .No1_img{width: 100%;height:45%;opacity:0;  animation-name: bounceIn;animation-duration:1s; animation-delay:.5s; }
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+/*2号图片*/
+.page1 .No2_img{opacity:0;width: 100%;height:35%;margin-top:-.4rem;
+  animation-name:fadeInUp;animation-duration: 1s; animation-delay:1s;}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/*3号图片*/
+.page1 .img_box{width: 100%;height:40%;position:absolute;bottom:0;left:0; text-align:center;z-index: 99;}
+.page1 .No3_img{width: 100%;height:80%;position: absolute;left:0;top:0;z-index: 3; }
+
+
+/*4号图片*/
+.page1 .No4_img{width:10rem;height:2rem;position:absolute;top:1rem;
+  left:50%;margin-left:-5rem;z-index: 4;text-align:center;
+  animation-name: fadeInDown;animation-duration:1s; animation-delay:2s;
+  opacity:0;}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------第  二   页   面---------------------------*/
+
+
+
+
+
+/*第二页面*/
+.page2 {width: 100%;height: 100%;background:red;background:#E4AD70;position: absolute;top:100%;left:0;z-index: 7;overflow:hidden;}
+.page2 .top{width: 100%;}
+.page2 .top img{width: 100%;}
+.page2 .content{width:80%;height: 60%;margin:auto;}
+.page2 .list{width:100%;margin:.2rem auto .6rem;display:flex;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;justify-content:space-between;position: relative;}
+.page2 .list .touxiang{float:left;width:1.5rem;height:1.5rem;margin-right:.5rem; }
+ .page2 .right_img_box{flex: 5;height:1.5rem;position: relative;z-index: 5;
+ 	}
+.page2 .right_img_box img{position: absolute;left:0;top:0;width: 100%;height: 100%;}
+.page2 .right_img_box .quest{z-index: 9;}
+.page2 .right_img_box .white {z-index:8;}
+.page2 .right_img_box .question1{z-index: 6;}
+.page2 .right_img_box .red{z-index: 5;}
+
+
+.page2 .header{width: 100%;position:absolute;bottom:0;left:0;}
+.page2 .header img{width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*第三页面*/
+.page3{width: 100%;height: 100%;position: absolute;top:100%;left:0;background: #E4AD70;margin-bottom:-200%;overflow:hidden; }
+.page3 .questions{display:flex;justify-content:space-around;align-items:flex-end;padding:.7rem .7rem 0 .7rem;position: relative;z-index: 5;}
+ .page3 .questions .daoying{position: absolute;left:.8rem;bottom:0;width:4rem;height: .7rem;z-index: 2;}
+.page3 .questions img{width:55%;height: 100%;position:relative;z-index: 4;}
+.page3 .questions .qinqi{width: 45%;animation:budao .5s infinite linear;animation-direction:alternate;transform-origin:bottom center;}
+@keyframes budao{
+  0%{transform:rotate(-10deg)}
+  100%{transform:rotate(10deg)}
+}
+
+.page3 .Answer{
+  width:100%;height: 5rem;margin:.5rem auto;
+  background:url(../img/an_bg.png) no-repeat;
+  background-size:100% 100%; 
+  position:relative;
+  padding-top:.1rem;
+}
+.page3 .Answer .radio_box{
+  width: 100%;
+  position: absolute;
+  left:1rem;
+  padding-top:.2rem; 
+}
+ .page3 .radio_box .radio{width: 100%;position:relative;}
+ .page3 .radio_box .radio .off{
+  display:inline-block;
+  width: .5rem;
+  height:.5rem;
+  border-radius: 100%;
+  margin-bottom:3px; 
+  background: url(../img/radio.png) no-repeat;
+  background-size:100% 100%;
+ }
+  .page3 .radio_box .radio .on{display: inline-block;width: .5rem;height: .5rem;
+    border-radius: 100%;margin-bottom: 3px;
+ background:url(../img/radio_select.png) no-repeat;background-size:100% 100%;}
+  .page3 .Answer .radio .select{margin-top:-1rem;margin-left: -.5rem; opacity:0;}
+.page3 .Answer .daan{
+  width: 100%;
+  height: 37%;
+  margin-top:.2rem;
+  margin-left:2px;  
+}
+.page3 .Answer textarea{width:7.3rem;height: 1.5rem;position: absolute;bottom: .7rem;left:50%;z-index:6;margin-left: -3.9rem;border-radius: 10px;padding-right:.3rem;border:none; outline: none;font-size:.4rem; opacity: 0;}
+.page3 .Answer .tips{position:absolute;left:.2rem;bottom:1.4rem;z-index:4; width: 100%;}
+
+
+
+.page3 .btn_box{display:flex;justify-content:space-around;padding:0 .3rem;}
+.page3 .btn_box img{width: 40%;height: 1.3rem;}
+
+
+.page3 .page3_bg{width: 100%;height: 100%;position:absolute;left:0;top:0;display: none;
+}
+.page3 .bg5{display:block;}
+.page3 .bg3 .daan{height: 45%;}
+.page3 .page3_cover{width:100%;height:0;background:#000;position: relative;z-index: 16;}
+
+.page3 .page3_cover_bottom{position: absolute;bottom:0;}
+.page3 .page3_cover_top{position: absolute;top:0;}
+

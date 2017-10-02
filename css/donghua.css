@@ -1,0 +1,83 @@
+/*自助攻略页面1*/
+
+
+/*--------------------------------------------------------*/
+
+    /*1号图片*/
+    .page1 .No1_img{width: 100%;height:45%;opacity:0;  animation-name: bounceIn;animation-duration:1s; animation-delay:.5s; }
+    @keyframes bounceIn {
+      from, 20%, 40%, 60%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      }
+
+      0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+      }
+
+      20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+      }
+
+      40% {transform: scale3d(.9, .9, .9);
+      }
+
+      60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+      }
+
+      80% {
+        transform: scale3d(.97, .97, .97);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+    }
+
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 50%, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+    /*2号图片*/
+    .page1 .No2_img{opacity:0;width: 100%;height:35%;margin-top:-.4rem;
+      animation-name:fadeInUp;animation-duration: 1s; animation-delay:1s;}
+
+    /*3号图片*/
+    .page1 .img_box{width: 100%;height:40%;position:absolute;bottom:0;left:0; text-align:center;z-index: 99;}
+    .page1 .No3_img{width: 100%;height:80%;position: absolute;left:0;top:0;z-index: 3; }
+
+
+    /*4号图片*/
+    .page1 .No4_img{width:3.6rem;height:.7rem;position:absolute;top:.5rem;
+      left:50%;margin-left:-1.8rem;z-index: 4;text-align:center;
+      animation-name: fadeInDown;animation-duration:1s; animation-delay:2s;
+      opacity:0;}
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+
+
+
+
+
